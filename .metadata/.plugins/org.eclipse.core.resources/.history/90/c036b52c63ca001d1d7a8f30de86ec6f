@@ -1,0 +1,5 @@
+package com.softech.controller;
+
+public interface service {
+
+}

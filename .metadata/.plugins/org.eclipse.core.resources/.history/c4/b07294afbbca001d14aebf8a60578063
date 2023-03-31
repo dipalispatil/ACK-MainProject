@@ -1,0 +1,21 @@
+package com.softech.bsService;
+
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.softech.Entity.orderHeader;
+
+@Service
+public class service {
+
+	private Environment env;
+	
+	public orderHeader saveOrder(@RequestBody orderHeader order) {
+		
+		return order;
+		
+	}
+	
+	
+}

@@ -1,0 +1,39 @@
+package com.softech.ServiceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.softech.Entity.AdDocuments;
+import com.softech.Entity.ProductInfo;
+import com.softech.Entity.orderHeader;
+import com.softech.Repository.ProductInfoRepo;
+import com.softech.Repository.orderHeaderRepository;
+import com.softech.Service.orderService;
+@Service
+public class orderServiceImpl implements orderService{
+
+	@Autowired
+	private orderHeaderRepository orderRepo;
+	@Autowired
+	private ProductInfoRepo productRepo;
+	
+	@Override
+	public orderHeader addOrder(orderHeader order) {
+		orderHeader save = orderRepo.save(order);
+		return save;
+	}
+	@Override
+	public ProductInfo addProduct(ProductInfo product) {
+		ProductInfo productInfo = productRepo.save(product);
+		return productInfo;
+	}
+	@Override
+	public AdDocuments adDocumentsGenerateAndPersist(orderHeader order) {
+		AdDocuments adDocuments = new AdDocuments();
+		ProductInfo stroreProductInfo = productRepo.findByproductNumber(order.getOrderItems().getProductNumber());
+		
+		return null;
+	}
+	
+
+}

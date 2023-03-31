@@ -1,0 +1,5 @@
+package com.softech.Repository;
+
+public interface addressRepository {
+
+}

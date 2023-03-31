@@ -1,0 +1,33 @@
+package com.softech.service.Impl;
+
+import java.net.http.HttpHeaders;
+
+import org.hibernate.cfg.Environment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.client.RestTemplate;
+
+import com.softech.Entity.orderHeader;
+import com.softech.Service.orderService;
+
+public class orderServiceImpl implements orderService {
+
+	RestTemplate restTemp = new RestTemplate();
+	
+	@Autowired
+	private Environment env;
+	
+	
+	@Override
+	public orderHeader addOrder(orderHeader order) {
+		
+		String url = "http://localhost:9092/ack_bs/save/";
+		org.springframework.http.HttpHeaders httpHeaders = new org.springframework.http.HttpHeaders();
+		httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+
+		return null;
+	}
+
+	
+	
+}

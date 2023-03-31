@@ -1,0 +1,19 @@
+package com.softech.Entity;
+
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
+
+@Entity
+public class AdDocuments {
+
+	private Long id;
+	private String userName;
+	private Long purchaseOrderNumber;
+	private LocalDate documentsCreateDate;
+	private String acknowledgementType;
+	
+	@OneToOne
+	private orderItems ordrItems;
+}

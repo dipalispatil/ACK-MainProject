@@ -1,0 +1,12 @@
+package com.softech.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.softech.Entity.ProductInfo;
+
+public interface ProductInfoRepo extends JpaRepository<ProductInfo, Integer>
+
+
+	
+	
+}

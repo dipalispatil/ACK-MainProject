@@ -1,0 +1,8 @@
+package com.softech.controller;
+
+import com.softech.Entity.orderHeader;
+
+public interface service {
+	public orderHeader addorder();
+
+}

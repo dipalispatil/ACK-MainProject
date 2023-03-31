@@ -1,0 +1,16 @@
+package com.softech;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication(exclude= {DataSourceAutoConfiguration.class})
+@ComponentScan("com.elementsoftech.core.reposition.orderHeaderRepo")
+public class Acknowledgement2Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Acknowledgement2Application.class, args);
+	}
+
+}

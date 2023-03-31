@@ -1,0 +1,22 @@
+package com.softech.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.softech.Entity.orderHeader;
+
+
+@RestController
+public class mainController {
+  
+	public ResponseEntity<orderHeader> saveorder(@RequestBody orderHeader order){
+		
+		
+		return null;
+		
+		
+	}
+	
+
+}

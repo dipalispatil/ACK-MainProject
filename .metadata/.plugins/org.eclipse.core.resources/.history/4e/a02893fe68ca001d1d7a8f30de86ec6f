@@ -1,0 +1,16 @@
+package com.softech.service.Impl;
+
+import com.softech.Entity.orderHeader;
+import com.softech.Service.orderService;
+
+public class orderServiceImpl implements orderService {
+
+	@Override
+	public orderHeader addOrder(orderHeader order) {
+		
+		return null;
+	}
+
+	
+	
+}

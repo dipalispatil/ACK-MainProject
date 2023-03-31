@@ -1,0 +1,26 @@
+package com.softech.service.Impl;
+
+import org.hibernate.cfg.Environment;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
+import com.softech.Entity.orderHeader;
+import com.softech.Service.orderService;
+
+public class orderServiceImpl implements orderService {
+
+	RestTemplate restTemp = new RestTemplate();
+	
+	@Autowired
+	private Environment env;
+	
+	@Override
+	public orderHeader addOrder(orderHeader order) {
+		
+		
+		return null;
+	}
+
+	
+	
+}

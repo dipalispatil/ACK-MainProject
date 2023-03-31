@@ -1,0 +1,26 @@
+package com.softech.bsService;
+
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.client.RestTemplate;
+
+import com.softech.Entity.orderHeader;
+
+@Service
+public class service {
+
+	private Environment env;
+	
+	RestTemplate restTemp = new RestTemplate();
+
+	
+	public orderHeader saveOrder(@RequestBody orderHeader order) {
+		String coreRoot = env.getProperty("api.core.root");
+		
+		String url = coreRoot+"/saveOrder";
+		
+	}
+	
+	
+}

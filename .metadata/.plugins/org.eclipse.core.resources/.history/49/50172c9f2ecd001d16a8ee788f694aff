@@ -1,0 +1,14 @@
+package com.softech.Entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class ProductInfo {
+
+	private int id;
+	private String productNme;
+	private Long productNumber;
+	private int productQty;
+
+	
+}
